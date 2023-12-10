@@ -1,0 +1,14 @@
+alias f='fd --type f --hidden --exclude .git | fzf-tmux -p --border --margin=0,1 --preview "bat -f -P --plain {1}" | xargs -r nvim +'
+
+alias s="source $HOME/.zshrc"
+
+alias c=clear
+alias ls="exa -lah --git --icons"
+alias l="exa -lah --git --icons"
+alias cat=bat
+
+alias j="javac Main.java && java Main"
+
+
+alias rm="rm -rvf"
+alias ..="cd .."
