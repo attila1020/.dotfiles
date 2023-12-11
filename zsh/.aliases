@@ -7,7 +7,7 @@ alias ls="exa -lah --git --icons"
 alias l="exa -lah --git --icons"
 alias cat=bat
 
-alias j="javac Main.java && java Main"
+# alias j="javac Main.java && java Main"
 
 
 alias rm="rm -rvf"
