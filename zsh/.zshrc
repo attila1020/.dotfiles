@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="gozilla"
 #ZSH_THEME="gallois"
 
-plugins=(git z)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,6 +20,13 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.dotfiles/zsh/.aliases
 source ~/.dotfiles/zsh/.functions
+
+
+export PATH=~/dev/tmp:"$PATH"
+export GOBIN=~/go/bin
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
+
 
 #### ------------------------------
 
