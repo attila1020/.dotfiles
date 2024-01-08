@@ -7,8 +7,14 @@ alias ls="exa -lah --git --icons"
 alias l="exa -lah --git --icons"
 alias cat=bat
 
-alias j="j.py"
+alias j="java Main.java && java Main"
 
 
 alias rm="rm -rvf"
 alias ..="cd .."
+
+alias e="nvim"
+
+alias dot="cd ~/.dotfiles"
+
+alias gg="lazygit"
