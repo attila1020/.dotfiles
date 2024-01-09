@@ -1,0 +1,22 @@
+return {
+    -- add gruvbox
+--    { "ellisonleao/gruvbox.nvim" },
+  --0
+    -- Configure LazyVim to load gruvbox
+   -- {
+  --    "LazyVim/LazyVim",
+     -- opts = {
+       -- colorscheme = "gruvbox",
+      --},
+  --  }
+  --
+
+  {
+    "bluz71/vim-nightfly-guicolors",
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      -- load the colorscheme here
+      vim.cmd([[colorscheme nightfly]])
+    end,
+  }
+}
