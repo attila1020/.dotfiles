@@ -18,3 +18,4 @@ alias e="nvim"
 alias dot="cd ~/.dotfiles"
 
 alias gg="lazygit"
+alias editvim="nvim ~/.dotfiles/nvim/."
