@@ -51,7 +51,7 @@ vicmd_symbol = "[❮](green)"
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
-style = "bright-green"
+style = "green"
 
 [jobs]
 symbol = ""
@@ -65,7 +65,7 @@ style = "cyan"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-green"
+style = "green"
 
 [git_metrics]
 disabled = false
