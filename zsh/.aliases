@@ -10,7 +10,7 @@ alias cat=bat
 alias j="java Main.java && java Main"
 
 
-alias rm="rm -rvf"
+alias rm="rm -rf"
 alias ..="cd .."
 
 alias e="nvim"
