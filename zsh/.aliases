@@ -3,7 +3,7 @@ alias f='fd --type f --hidden --exclude .git | fzf-tmux -p --border --margin=0,1
 alias s="source $HOME/.zshrc"
 
 alias c=clear
-alias ls="exa -lah --git --icons"
+#  alias ls="exa -lah --git --icons"
 alias l="exa -lah --git --icons"
 alias cat=bat
 
@@ -19,3 +19,7 @@ alias dot="cd ~/.dotfiles"
 
 alias gg="lazygit"
 alias editvim="nvim ~/.dotfiles/nvim/."
+
+alias runc="gcc main.c && ./a.out && rm ./a.out"
+
+alias obsi="cmd.exe /C start C:/Users/Attila/AppData/Local/Obsidian/Obsidian.exe"
