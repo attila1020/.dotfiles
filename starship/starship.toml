@@ -1,63 +1,45 @@
+### ---- Prompt -------------------
 format = """
 $username\
 $hostname\
 $directory\
 $git_branch\
-$git_state\
-$git_status\
-$git_metrics\
-$fill\
-$nodejs\
-$dotnet\
-$java\
-$python\
-$cmd_duration $time\
-$line_break\
-$character"""
+$character
+"""
+right_format="""
+$all
+"""
+ 
+add_newline = false
 
-[dotnet]
-# symbol = " "
-symbol = ".NET "
-style = "bold blue"
-format = "[$symbol($version )]($style)"
-
-[python]
-format = "[$symbol($version )($virtualenv )]($style)"
-symbol = " "
-
-
-[java]
-style="bold red"
-format = "[$symbol($version )]($style)"
-symbol = " "
-
-[nodejs]
-format = "[$symbol($version )]($style)"
-
-[fill]
-symbol = " "
+### ---- Basic config -------------
 
 [directory]
 style = "bold cyan"
-read_only = " "
+read_only = " 🔒"
 truncation_length = 4
 truncate_to_repo = false
 
 [character]
 success_symbol = "[❯](cyan)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+# vicmd_symbol = "[❮](green)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
+
+### ---- Git config -------------------
 
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
 style = "green"
-
-[jobs]
-symbol = ""
-style = "bold red"
-number_threshold = 1
-format = "[$symbol]($style)"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
@@ -70,18 +52,30 @@ style = "green"
 [git_metrics]
 disabled = false
 
-[cmd_duration]
-format = "[$duration]($style)"
-style = "yellow"
+### ---- Language specific configs -------------
 
-[memory_usage]
-symbol = " "
+[c]
+format = '[$name $version]($style) '
+
+[python]
+format = "[$symbol($version )($virtualenv )]($style)"
+symbol = " "
+
+[java]
+style="bold red"
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
 
 
-[time]
-disabled = false
-style = "bold white"
-format = "[$time]($style)"
+### ---- Others -------------------
+
+
+
+
+
 
 
 

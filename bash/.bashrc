@@ -119,4 +119,3 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. "$HOME/.cargo/env"
