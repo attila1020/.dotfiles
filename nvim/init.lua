@@ -1,2 +1,2 @@
-require("neovim.core")
-require("neovim.lazy")
+require("mh.core")
+require("mh.lazy")

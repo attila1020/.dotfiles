@@ -1,6 +1,6 @@
 bash-file() # Create new shell file
 {
-  FILE_PATH=$1
+  FILE_PATH="$1.sh"
   mkdir -p -- "$(dirname "$FILE_PATH")" && touch -- "$FILE_PATH"
   echo '#!/usr/bin/env bash' >> "$FILE_PATH"
   echo '' >> "$FILE_PATH"
